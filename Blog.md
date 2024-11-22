@@ -49,7 +49,7 @@ Researchers are exploring advanced ASR models that can better handle accent vari
 
 The journey to create an inclusive Automatic Speech Recognition (ASR) system for Indian English speakers has led us through multiple iterations and improvements. Initially, we worked with the Svarah dataset, but analysis revealed a significant limitation: an overabundance of single-word recordings that made it difficult to extract meaningful accent features.
 
-![Distribution of Speaker Audio Durations]([Distribution.jpg](https://github.com/Aryaan03/Independent-Study/blob/main/Distribution.png))
+![Distribution of Speaker Audio Durations](https://github.com/Aryaan03/Independent-Study/blob/main/Distribution.png)
 
 The distribution graph above shows a clear spike in very short audio durations (0-2 seconds), indicating a predominance of single-word utterances that don't capture the natural flow and prosody of Indian-accented English speech.
 
