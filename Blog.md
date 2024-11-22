@@ -8,7 +8,7 @@ Automatic Speech Recognition (ASR) has become an integral part of our daily live
 
 Indian English is characterized by a rich tapestry of accents influenced by the country's linguistic diversity. With 22 constitutionally recognized languages and numerous dialects, Indian English speakers exhibit a wide range of phonetic and phonological features that distinguish their speech from other English varieties.
 
-![Most Commonly Spoken Native Languages in India](https://github.com/Aryaan03/Independent-Study/blob/main/Indian%20Lang%20Dist.webp)
+![Most Commonly Spoken Native Languages in India](https://github.com/Aryaan03/Independent-Study/blob/main/Indian%20Lang%20Dist.png)
 *Source: Census 2011, statsofIndia.in by @PratapVardhan*
 
 ### Key Features of Indian English Accents
