@@ -76,18 +76,12 @@ Accents vary considerably based on the speaker's primary language and region, su
 
 These variations make Indian English a rich and diverse dialect, reflecting India's linguistic diversity.
 
-1. **Consonants**: Indian English often uses retroflex plosives [ʈ] and [ɖ] instead of the alveolar plosives [t] and [d] found in American English
-2. **Aspirated vs. Unaspirated Plosives**: Unlike American English, Indian English makes a clear distinction between aspirated and unaspirated sounds, which can change the meaning of words
-3. **Vowels**: The central vowels [ə] (schwa) and [ʌ] are often not distinguished in traditional Indian English pronunciation
-4. **Non-rhoticity**: Indian English is generally non-rhotic, meaning the 'r' at the end of words or before consonants is not pronounced, similar to British English
-5. **Regional Variations**: Accents vary considerably based on the speaker's primary language and region, such as Bengali English, Southern Indian English, and Punjabi English
-
 ## The ASR Inclusivity Dilemma
 
 Despite the advancements in ASR technology, models often struggle with accurately transcribing Indian English accents. This challenge stems from several factors:
 
 1. **Data Bias**: Most commercial ASR systems are trained primarily on American and British English datasets, leading to poor performance on Indian accents. This bias results in higher error rates and frustration for Indian English speakers.
-2. **Linguistic Complexity**: The phonetic and phonological features of Indian English, influenced by the country's diverse languages, create a complex landscape for ASR systems to navigate. Features like retroflex consonants and unique stress patterns are often misinterpreted.
+2. **Linguistic Complexity**: The phonetic and phonological features of Indian English, influenced by the country's diverse languages, create a complex landscape for ASR systems to navigate. Features like retroflex consonants, vowel peculiarities, unique stress patterns and regional variations are often misinterpreted.
 3. **Limited Resources**: There is a scarcity of large-scale, high-quality datasets that represent the full spectrum of Indian English accents. This lack of training data hampers the development of more inclusive ASR models.
 
 ## Current Research and Solutions
@@ -112,7 +106,7 @@ Researchers are exploring advanced ASR models that can better handle accent vari
 - **Whisper**: OpenAI's Whisper model, trained on 680,000 hours of multilingual data, shows promise in handling diverse accents
 - **Wav2vec 2.0**: This self-supervised learning model has shown potential in adapting to various accents with limited labeled data
 
-## Improving ASR Inclusivity: From Svarah to UF Indian Accent Dataset
+## Improving ASR Inclusivity: From SVARAH to UFIND Accent Dataset
 
 The journey to create an inclusive Automatic Speech Recognition (ASR) system for Indian English speakers has led us through multiple iterations and improvements. Initially, we worked with the Svarah dataset, but analysis revealed a significant limitation: an overabundance of single-word recordings that made it difficult to extract meaningful accent features.
 
@@ -122,7 +116,7 @@ The distribution graph above shows a clear spike in very short audio durations (
 
 ### The Need for a New Approach
 
-The limitations of the Svarah dataset prompted us to develop a more focused and structured data collection methodology. We're now gathering data from Indian students at the University of Florida using Qualtrics, ensuring longer, more natural speech samples that better capture accent characteristics.
+The limitations of the Svarah dataset prompted us to develop a more focused and structured data collection methodology. We're now gathering data from Indian students at the University of Florida using Qualtrics, ensuring longer, more natural speech samples that better capture accent characteristics. If you are Indian, you an also help us in 
 
 ### New Data Collection Framework
 
@@ -159,7 +153,6 @@ The new dataset focuses specifically on Indian students at UF, collecting detail
 To ensure high-quality recordings, we've implemented strict guidelines:
 
 - Quiet environment requirements
-- Consistent microphone positioning
 - Clear speaking instructions
 - Quality verification through playback
 - WAV format recordings for optimal audio quality
