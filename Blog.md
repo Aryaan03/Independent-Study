@@ -15,60 +15,62 @@ India's linguistic landscape is extraordinarily diverse, with 22 officially reco
 
 ### Key Features of Indian English Accents
 
-#### Consonant Variations
-1. **"Curled Tongue" Sounds**:
+#### 1. Consonant Variations
+
+i) **"Curled Tongue" Sounds**:
 
 - Indian English speakers often use sounds made with the tongue curled back (called retroflex consonants) in place of regular "t" and "d" sounds.<br>
 - Example: The word "tea" might sound like "tea" but with the tongue curled back for the "t" sound.<br>
 - To understand this, try saying "tea" while curling your tongue tip backwards and touching the roof of your mouth.<br>
 
-2. **'V/W' Confusion**:
+ii) **'V/W' Confusion**:
 
 - The difference between "v" and "w" sounds is often unclear.<br>
 - Example: "Vine" might sound like "wine" and vice versa.<br>
 - Think of saying "very well" as "wery vell".<br>
 
-#### Vowel Peculiarities
+#### 2. Vowel Peculiarities
+The central vowels [ə] (schwa) and [ʌ] are often not distinguished in traditional Indian English pronunciation
 
-  1. **Full Vowel Sounds**:
+  i) **Full Vowel Sounds**:
   - Short, unstressed vowels (like the "a" in "about") are often pronounced as full, clear vowels.
   - Example: "About" might be pronounced as "a-bout" with both vowels clearly heard.
   - Imagine saying "a-bout" with equal stress on both parts.
 
-  2. **Simplified Double Vowels**:
+  ii) **Simplified Double Vowels**:
   - Some double vowel sounds (diphthongs) are simplified to single vowels.
   - Example: "Go" might be pronounced more like "goh" without the subtle "uh" sound at the end.
 
-#### Stress and Intonation
+#### 3. Stress and Intonation
 
-  1. **Equal Syllable Stress**:
+  i) **Equal Syllable Stress**:
   - Each syllable tends to receive equal stres
   - Example: "Computer" might be pronounced as "com-pu-ter" with equal emphasis on each part.
    
-  2. **Different Word Stress**:
+  ii) **Different Word Stress**:
   - The emphasized part of longer words may differ from standard English.
   - Example: "DEvelop" might be pronounced as "deveLOP".
 
-#### Breath Distinctions
+#### 4. Breath Distinctions
 Indian English often makes a clear difference between sounds pronounced with or without a puff of air (aspiration), which isn't common in other English varieties. 
 
-  1. **Sounds Without Puffs**:
+  i) **Sounds Without Puffs**:
   - The "p", "t", and "k" sounds are often said without a puff of air.
   - Example: "Pin" might sound more like "bin" to non-Indian ears.
   - Try saying "pin" without blowing air at the start.
   
-  2. **Sounds With Strong Puffs:**
+  ii) **Sounds With Strong Puffs:**
   - Some Indian languages have versions of sounds with extra strong puffs of air.
   - Example: Imagine saying "pin" with an extra strong puff of air after the "p".
 
-#### Regional Variations
+#### 5. Regional Variations
 Accents vary considerably based on the speaker's primary language and region, such as Bengali English, Southern Indian English, and Punjabi English.
 
- 1. **Tamil-influenced English**:
+ i) **Tamil-influenced English**:
   - Often has a strong "r" sound and certain vowel changes.
   - Example: "Very" might sound more like "wery".
  
- 2. **Bengali-influenced English**:
+ ii) **Bengali-influenced English**:
   - Often has a softer "v" sound and distinct vowel qualities.
   - Example: "Love" might sound more like "lobe".
 
@@ -84,23 +86,24 @@ These variations make Indian English a rich and diverse dialect, reflecting Indi
 
 Despite the advancements in ASR technology, models often struggle with accurately transcribing Indian English accents. This challenge stems from several factors:
 
-1. **Data Bias**: Many ASR models are trained primarily on standard American or British English, leading to poor performance on Indian accents
-2. **Linguistic Complexity**: The diverse phonetic and phonological features of Indian English pose a significant challenge for ASR systems
-3. **Limited Resources**: There is a scarcity of large-scale, high-quality datasets representing the full spectrum of Indian English accents
+1. **Data Bias**: Most commercial ASR systems are trained primarily on American and British English datasets, leading to poor performance on Indian accents. This bias results in higher error rates and frustration for Indian English speakers.
+2. **Linguistic Complexity**: The phonetic and phonological features of Indian English, influenced by the country's diverse languages, create a complex landscape for ASR systems to navigate. Features like retroflex consonants and unique stress patterns are often misinterpreted.
+3. **Limited Resources**: There is a scarcity of large-scale, high-quality datasets that represent the full spectrum of Indian English accents. This lack of training data hampers the development of more inclusive ASR models.
 
 ## Current Research and Solutions
+Researchers and organizations are actively working to address these challenges through various approaches:
 
-To address these challenges, researchers and organizations are working on various approaches:
+### 1. The SVARAH Dataset
 
-### 1. The Svarah Dataset
-
-The Svarah dataset is a significant step towards improving ASR for Indian English accents. Key features of this dataset include:
+The SVARAH dataset represents a significant step towards improving ASR for Indian English accents. Key features include::
 
 - 9.6 hours of transcribed English audio
 - 117 speakers from 65 districts across 19 states in India
 - Diverse range of accents reflecting 19 of 22 constitutionally recognized languages
 - Both read speech and spontaneous conversational data
 - Coverage of various domains and common use case scenarios
+
+While Svarah is a valuable resource, it has limitations, particularly an overabundance of single-word recordings that don't fully capture the nuances of connected speech.
 
 ### 2. Advanced ASR Models
 
@@ -115,7 +118,7 @@ The journey to create an inclusive Automatic Speech Recognition (ASR) system for
 
 ![Distribution of Speaker Audio Durations](https://github.com/Aryaan03/Independent-Study/blob/main/Distribution.png)
 
-The distribution graph above shows a clear spike in very short audio durations (0-2 seconds), indicating a predominance of single-word utterances that don't capture the natural flow and prosody of Indian-accented English speech.
+The distribution graph above shows a clear spike in very short audio durations (0-5 seconds), indicating a predominance of single-word utterances that don't capture the natural flow and prosody of Indian-accented English speech.
 
 ### The Need for a New Approach
 
