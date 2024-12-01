@@ -116,7 +116,7 @@ The journey to create an inclusive Automatic Speech Recognition (ASR) system for
 
 This distribution graph above shows a clear spike in very short audio durations (0-5 seconds), which is a significant limitation in the dataset. The overabundance of very short recordings makes it challenging to capture the natural rhythm, intonation, and connected speech patterns that are crucial for understanding and modeling Indian-accented English. Longer recordings would be more valuable for capturing these prosodic features and natural speech variations.
 
-This limitation of the Svarah dataset prompted us to develop a more focused and structured data collection methodology. We're now gathering data from Indian students at the University of Florida using Qualtrics, ensuring longer, more natural speech samples that better capture accent characteristics. If you are Indian, you an also help us in 
+This limitation of the Svarah dataset prompted us to develop a more focused and structured data collection methodology. We're now gathering data from Indian students at the University of Florida using Qualtrics, ensuring longer, more natural speech samples that better capture accent characteristics.
 
 ### New Data Collection Framework
 
@@ -125,8 +125,15 @@ This limitation of the Svarah dataset prompted us to develop a more focused and 
 Our new approach implements a comprehensive survey designed to collect:
 
 - Detailed demographic information
+  - Age and gender
+  - Educational qualifications
+  - Professional background
+  - Geographic origin within India
+  - Language background
+- English acquisition history
 - Educational background
 - Linguistic history
+- Primary Langauges
 - High-quality audio recordings
 
 #### Recording Categories
@@ -136,17 +143,6 @@ The survey incorporates three distinct speech tasks:
 - **Read Speech**: Carefully selected texts covering various domains
 - **Extempore Speech**: Natural responses to familiar topics
 - **Use Case Scenarios**: Real-world situation simulations
-
-#### Participant Demographics
-
-The new dataset focuses specifically on Indian students at UF, collecting detailed information about:
-
-- Age and gender
-- Educational qualifications
-- Professional background
-- Geographic origin within India
-- Language background
-- English acquisition history
 
 #### Data Quality Controls
 
@@ -169,14 +165,25 @@ The new data collection process emphasizes:
 
 ### Future Directions
 
-This refined approach to data collection will enable:
+Our journey from SVARAH to UFIND (UF Indian Dataset) marks a pivotal shift in ASR development for Indian English. The distribution analysis clearly shows why this transition is crucial - while SVARAH was dominated by short 0-2 second utterances, our new methodology ensures longer, more natural speech samples.
 
-- Better accent feature extraction
-- More accurate ASR model training
-- Improved understanding of Indian English variations
-- Development of more inclusive speech recognition technology
+#### Current Progress
 
-The transition from Svarah to our new UF-focused dataset represents a significant step toward creating more accurate and inclusive ASR systems for Indian English speakers. By addressing the limitations of previous datasets and implementing a more structured collection methodology, we're building a foundation for better speech recognition technology.
+- Collected approximately 100 responses
+- On track to reach our target of 250 responses
+- Projected raw audio data: 10.5 hours
+
+#### Immediate Goals
+
+- Data Collection Enhancement
+  - Targeting 150 additional responses
+  - Focus on extracting features of Indian English Accents
+  - Ensuring diverse regional representation
+
+- Model Development
+  - Fine-tuning Whisper model with collected data
+  - Optimizing for Indian English variations
+  - Implementing accent-specific adaptations
 
 ## Join Our Research: Help Improve Speech Recognition for Indian Accents
 As our distribution analysis shows, we need more diverse and natural speech samples to build better ASR systems. If you are of Indian origin and would like to contribute to making speech technology more inclusive, we welcome your participation in our research.
@@ -190,7 +197,7 @@ You can participate in our data collection by taking a brief survey that include
 
 The survey takes approximately 7-10 minutes to complete, and your contribution will help develop more accurate speech recognition systems for Indian English speakers.
 
-###Participation Requirements
+### Participation Requirements
 
 - Must be of Indian origin
 - Comfortable speaking English
