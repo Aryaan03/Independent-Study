@@ -118,9 +118,9 @@ This distribution graph above shows a clear spike in very short audio durations 
 
 This limitation of the Svarah dataset prompted us to develop a more focused and structured data collection methodology. We're now gathering data from Indian students at the University of Florida using Qualtrics, ensuring longer, more natural speech samples that better capture accent characteristics.
 
-### New Data Collection Framework
+## New Data Collection Framework
 
-#### Survey Structure
+### Survey Structure
 
 Our new approach implements a comprehensive survey designed to collect:
 
@@ -136,7 +136,7 @@ Our new approach implements a comprehensive survey designed to collect:
 - Primary Langauges
 - High-quality audio recordings
 
-#### Recording Categories
+### Recording Categories
 
 The survey incorporates three distinct speech tasks:
 
@@ -144,7 +144,7 @@ The survey incorporates three distinct speech tasks:
 - **Extempore Speech**: Natural responses to familiar topics
 - **Use Case Scenarios**: Real-world situation simulations
 
-#### Data Quality Controls
+### Data Quality Controls
 
 To ensure high-quality recordings, we've implemented strict guidelines:
 
@@ -153,7 +153,7 @@ To ensure high-quality recordings, we've implemented strict guidelines:
 - Quality verification through playback
 - WAV format recordings for optimal audio quality
 
-#### Privacy and Ethics
+### Privacy and Ethics
 
 The new data collection process emphasizes:
 
@@ -163,7 +163,7 @@ The new data collection process emphasizes:
 - Anonymous data aggregation
 - Educational use restrictions
 
-### Future Directions
+## Future Directions
 
 Our journey from SVARAH to UFIND (UF Indian Dataset) marks a pivotal shift in ASR development for Indian English. The distribution analysis clearly shows why this transition is crucial - while SVARAH was dominated by short 0-2 second utterances, our new methodology ensures longer, more natural speech samples.
 
