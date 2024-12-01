@@ -1,12 +1,14 @@
-# The Inclusivity Challenge in Automatic Speech Recognition for Indian Accents
+# The Inclusivity Challenge in Automatic Speech Recognition for Indian Accents: Bridging the Gap
+
+Imagine a world where your voice assistant understands you perfectly, regardless of your accent. For millions of Indian English speakers, this dream remains elusive. Let's dive into the fascinating world of Automatic Speech Recognition (ASR) and explore how we are working to make this technology truly inclusive.
 
 ## Introduction
 
-Automatic Speech Recognition (ASR) has become an integral part of our daily lives, powering virtual assistants, live captioning, and audio transcription services. However, a significant challenge persists: the accurate recognition of diverse accents and dialects, particularly Indian English accents. This project explores the complexities of Indian English accents in ASR, the current state of research, and potential solutions to improve inclusivity in speech recognition technology.
+ASR has become an integral part of our daily lives, powering virtual assistants, live captioning, and audio transcription services. However, a significant challenge persists: the accurate recognition of diverse accents and dialects, particularly Indian English accents. In this blog we will explore the aspects, key features and complexities of Indian accented english, the current state of research, why we need new datasets and how to use the new datasets to potentially improve inclusivity of Indian accents in speech recognition technology.
 
-## Understanding Indian English Accents
+## The Colorful Tapestry of Indian English
 
-Indian English is characterized by a rich tapestry of accents influenced by the country's linguistic diversity. With 22 constitutionally recognized languages and numerous dialects, Indian English speakers exhibit a wide range of phonetic and phonological features that distinguish their speech from other English varieties.
+India's linguistic landscape is extraordinarily diverse, with 22 officially recognized languages and hundreds of dialects. This diversity has given birth to a unique variety of English, characterized by a wide range of accents and pronunciation patterns. Indian English speakers exhibit a wide range of phonetic and phonological features that distinguish their speech from other English varieties.
 
 ![Most Commonly Spoken Native Languages in India](https://github.com/Aryaan03/Independent-Study/blob/main/Indian%20Lang%20Dist.png)
 *Source: statsofIndia.in by @PratapVardhan*
