@@ -63,16 +63,56 @@ Indian English often makes a clear difference between sounds pronounced with or 
   - Some Indian languages have versions of sounds with extra strong puffs of air.
   - Example: Imagine saying "pin" with an extra strong puff of air after the "p".
 
-#### 5. Regional Variations
-Accents vary considerably based on the speaker's primary language and region, such as Bengali English, Southern Indian English, and Punjabi English.
+## Regional Variations
+Apart form the above distinctions, Indian Accents also vary considerably based on the speaker's primary language and region, such as Bengali English, Southern Indian English, and Punjabi English. [Link](https://en.wikipedia.org/wiki/Regional_differences_and_dialects_in_Indian_English)
 
- i) **Tamil-influenced English**:
-  - Often has a strong "r" sound and certain vowel changes.
-  - Example: "Very" might sound more like "wery".
- 
- ii) **Bengali-influenced English**:
-  - Often has a softer "v" sound and distinct vowel qualities.
-  - Example: "Love" might sound more like "lobe".
+#### I. Tamil-influenced English
+
+- Strong "r" sound and distinct vowel qualities
+- Example: "Very" might sound more like "wery"
+- Tendency to add an "a" sound at the end of questions
+- Clear pronunciation of "r" sounds throughout words
+- Stress on syllables, giving a rhythmic quality to speech
+
+#### II. Bengali-influenced English
+
+- Softer "v" sound and distinct vowel qualities
+- Example: "Love" might sound more like "lobe"
+- Tendency to replace "z" sounds with "j" sounds (e.g., "jero" for "zero")
+- Emphasis often placed on the second syllable of words (e.g., "tea-CHER" instead of "TEA-cher")
+- Melodic and soft-spoken quality compared to other Indian accents
+
+#### III. Punjabi-influenced English
+
+- Loud and boisterous accent, common in northern India
+- Clear pronunciation of "r" sounds
+- Tendency to use retroflex "t" and "d" sounds (tongue curled back)
+- Example: "Tea" pronounced with the tongue curled back for the "t" sound
+- Often emphasize syllables like "ji" instead of "jee"
+
+#### IV. Marathi-influenced English
+
+- Non-aspirated "p" and "b" sounds
+- Clear distinction between "v" and "w" sounds
+- Tendency to drop the final consonant in many words
+- Example: The "th" in words like "thigh" often pronounced as "d"
+- Generally more relaxed and laid-back tone of speech
+
+#### V. Telugu-influenced English
+
+- Words often end in vowel sounds
+- No contrastive stress, but emphasis usually on the final syllable
+- Pronounced "sh" sounds influenced by Telugu
+- Less aspirated "p" and "b" sounds
+- Distinct intonation patterns different from other Indian English varieties
+
+#### VI. Hindi-influenced English
+
+- Intonation pattern influenced by Hindi phonetics
+- Difficulty pronouncing certain English sounds, like "th" in "thought"
+- Clear pronunciation of "r" and "i" sounds
+- Less nasalization compared to some other Indian English varieties
+- Tendency to use Hindi sentence structures in English
 
 These variations make Indian English a rich and diverse dialect, reflecting India's linguistic diversity.
 
