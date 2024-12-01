@@ -110,13 +110,13 @@ Researchers are exploring advanced ASR models that can better handle accent vari
 
 The journey to create an inclusive Automatic Speech Recognition (ASR) system for Indian English speakers has led us through multiple iterations and improvements. Initially, we worked with the Svarah dataset, but analysis revealed a significant limitation: an overabundance of single-word recordings that made it difficult to extract meaningful accent features.
 
-![Distribution of Speaker Audio Durations](https://github.com/Aryaan03/Independent-Study/blob/main/Distribution_Plot.png)
-
-The distribution graph above shows a clear spike in very short audio durations (0-5 seconds), indicating a predominance of single-word utterances that don't capture the natural flow and prosody of Indian-accented English speech.
-
 ### The Need for a New Approach
 
-The limitations of the Svarah dataset prompted us to develop a more focused and structured data collection methodology. We're now gathering data from Indian students at the University of Florida using Qualtrics, ensuring longer, more natural speech samples that better capture accent characteristics. If you are Indian, you an also help us in 
+![Distribution of Speaker Audio Durations](https://github.com/Aryaan03/Independent-Study/blob/main/Distribution_Plot.png)
+
+This distribution graph above shows a clear spike in very short audio durations (0-5 seconds), which is a significant limitation in the dataset. The overabundance of very short recordings makes it challenging to capture the natural rhythm, intonation, and connected speech patterns that are crucial for understanding and modeling Indian-accented English. Longer recordings would be more valuable for capturing these prosodic features and natural speech variations.
+
+This limitation of the Svarah dataset prompted us to develop a more focused and structured data collection methodology. We're now gathering data from Indian students at the University of Florida using Qualtrics, ensuring longer, more natural speech samples that better capture accent characteristics. If you are Indian, you an also help us in 
 
 ### New Data Collection Framework
 
@@ -177,3 +177,25 @@ This refined approach to data collection will enable:
 - Development of more inclusive speech recognition technology
 
 The transition from Svarah to our new UF-focused dataset represents a significant step toward creating more accurate and inclusive ASR systems for Indian English speakers. By addressing the limitations of previous datasets and implementing a more structured collection methodology, we're building a foundation for better speech recognition technology.
+
+## Join Our Research: Help Improve Speech Recognition for Indian Accents
+As our distribution analysis shows, we need more diverse and natural speech samples to build better ASR systems. If you are of Indian origin and would like to contribute to making speech technology more inclusive, we welcome your participation in our research.
+
+### How You Can Help
+You can participate in our data collection by taking a brief survey that includes:
+
+- Recording natural speech samples
+- Providing demographic information
+- Sharing your linguistic background
+
+The survey takes approximately 7-10 minutes to complete, and your contribution will help develop more accurate speech recognition systems for Indian English speakers.
+
+###Participation Requirements
+
+- Must be of Indian origin
+- Comfortable speaking English
+- Access to a quiet environment and a working microphone
+- Willing to provide anonymous demographic information
+
+To participate in this research and help make speech technology more inclusive, please visit: [Survey Link](https://ufl.qualtrics.com/jfe/form/SV_bsypey1tUeqAic6) 
+<br> Your participation will be completely voluntary and confidential, contributing to the development of more accurate and inclusive speech recognition technology.
