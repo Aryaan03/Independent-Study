@@ -10,8 +10,7 @@ ASR has become an integral part of our daily lives, powering virtual assistants,
 
 India's linguistic landscape is extraordinarily diverse, with 22 officially recognized languages and hundreds of dialects. This diversity has given birth to a unique variety of English, characterized by a wide range of accents and pronunciation patterns. Indian English speakers exhibit a wide range of phonetic and phonological features that distinguish their speech from other English varieties.
 
-![Most Commonly Spoken Native Languages in India](https://github.com/Aryaan03/Independent-Study/blob/main/Indian%20Lang%20Dist.png)
-*Source: statsofIndia.in by @PratapVardhan*
+<p align="center"> <img src="https://github.com/Aryaan03/Independent-Study/blob/main/Indian%20Lang%20Dist.png" alt="Most Commonly Spoken Native Languages in India" style="width: 80%;"> </p> <p align="center"><em>Source: statsofIndia.in by @PratapVardhan</em></p> 
 
 ### Key Features of Indian English Accents
 
@@ -19,7 +18,7 @@ India's linguistic landscape is extraordinarily diverse, with 22 officially reco
 
 i) **"Curled Tongue" Sounds**:
 
-- Indian English speakers often use sounds made with the tongue curled back (called retroflex consonants) in place of regular "t" and "d" sounds.<br>
+- Indian English speakers often use sounds made with the tongue curled back (called retroflex consonants) in place of regular "t" and "d" sounds [1].<br>
 - Example: The word "tea" might sound like "tea" but with the tongue curled back for the "t" sound.<br>
 - To understand this, try saying "tea" while curling your tongue tip backwards and touching the roof of your mouth.<br>
 
@@ -38,7 +37,7 @@ The central vowels [ə] (schwa) and [ʌ] are often not distinguished in traditio
   - Imagine saying "a-bout" with equal stress on both parts.
 
   ii) **Simplified Double Vowels**:
-  - Some double vowel sounds (diphthongs) are simplified to single vowels.
+  - Some double vowel sounds (diphthongs) are simplified to single vowels [2].
   - Example: "Go" might be pronounced more like "goh" without the subtle "uh" sound at the end.
 
 #### 3. Stress and Intonation
@@ -152,7 +151,7 @@ The journey to create an inclusive Automatic Speech Recognition (ASR) system for
 
 ### The Need for a New Approach
 
-![Distribution of Speaker Audio Durations](https://github.com/Aryaan03/Independent-Study/blob/main/Distribution_Plot.png)
+<p align="center"> <img src="https://github.com/Aryaan03/Independent-Study/blob/main/Distribution_Plot.png" alt="Distribution of Speaker Audio Durations" style="width: 80%; max-width: 800px;"> </p> <p align="center"><em>Distribution of Speaker Audio Durations</em></p> 
 
 This distribution graph above shows a clear spike in very short audio durations (0-5 seconds), which is a significant limitation in the dataset. The overabundance of very short recordings makes it challenging to capture the natural rhythm, intonation, and connected speech patterns that are crucial for understanding and modeling Indian-accented English. Longer recordings would be more valuable for capturing these prosodic features and natural speech variations.
 
@@ -246,3 +245,19 @@ The survey takes approximately 7-10 minutes to complete, and your contribution w
 
 To participate in this research and help make speech technology more inclusive, please visit: [Survey Link](https://ufl.qualtrics.com/jfe/form/SV_bsypey1tUeqAic6) 
 <br> Your participation will be completely voluntary and confidential, contributing to the development of more accurate and inclusive speech recognition technology.
+
+
+
+## References 
+
+[1] Sirsa, H., & Redford, M. A. (2013). The effects of native language on Indian English sounds and timing patterns. Journal of Phonetics, 41(6), 393-406. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4028080/<br>
+[2] Jain, S., Pal, P., Vuppala, A. K., Ghosh, P. K., & Yarra, C. (2023). An Investigation of Indian Native Language Phonemic Influences on English Pronunciations. ISCA Archive. https://www.isca-archive.org/interspeech_2023/jain23b_interspeech.pdf<br>
+[3] Grolman, M. B., Biktagirova, Z. A., & Kasimov, O. H. (2021). Phonetic Peculiarities of the English Language in India. International Journal of Society, Culture & Language. https://www.ijscl.com/article_241951_a15237d176e59f6236b49c3389015f63.pdf<br>
+[4] Jiang, Y. (2023). A Study on the Influence of Mother Tongue Transfer on English Pronunciation of Primary Students. Open Journal of Modern Linguistics, 13(1), 49-59. https://www.scirp.org/journal/paperinformation?paperid=128933<br>
+[5] Jain, M., & Yadav, D. (2023). An investigation of Indian native language phonemic influences on Indian English pronunciation. Interspeech 2023. Retrieved from https://www.isca-archive.org/interspeech_2023/jain23b_interspeech.pdf<br>
+[6] Grolman, M. B., Biktagirova, Z. A., & Kasimov, O. H. (2022). Phonetic peculiarities of the English language in India. International Journal of Society, Culture & Language. Retrieved from https://www.ijscl.com/article_241951_a15237d176e59f6236b49c3389015f63.pdf<br>
+[7] Tarun, M., Israr, A., & Gajwal, D. (2022). Analysis of the factors influencing Indian English accents, and how pronunciation and articulation fill the accent gap. EPRA International Journal of Environmental Economics, Commerce and Educational Management. Retrieved from https://eprajournals.com/IJCM/article/6876/download<br>
+[8] Propósitos y Representaciones. (2021). Peculiarities of Indian English as a separate language. ERIC. https://files.eric.ed.gov/fulltext/EJ1298339.pdf<br>
+[9] Reppen, R. (n.d.). Teaching Children to Unlearn the Sounds of English. Northern Arizona University. https://jan.ucc.nau.edu/~jar/TIL_4.html 3<br>
+[10] Wikipedia. (n.d.). Non-native pronunciations of English. https://en.wikipedia.org/wiki/Non-native_pronunciations_of_English
+
