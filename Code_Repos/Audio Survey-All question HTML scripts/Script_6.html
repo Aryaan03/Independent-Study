@@ -1,0 +1,93 @@
+<b><h1 style="color:Black;">Choose any topic that interests you and speak for a minimum of 30 seconds about it: </h1><br> 
+    <p>The topic can be anything you're passionate about or knowledgeable in - feel free to let your imagination and expertise 
+        guide you. Below are just a few examples to spark your creativity, but you're not limited to these: </p></b><br>
+
+
+<p p style="font-size:14px; line-height: 1;">
+1. Describe your favorite festival and how you celebrate it with your family and friends. <br><br>
+
+2. Talk about any memorable trip you've taken. What made it special?<br><br>
+
+3. Explain the plot of your favorite movie or TV show and why you enjoy it so much. <br><br>
+
+4. Discuss the importance of traditional cuisine in your culture and describe a popular dish. <br><br>
+
+5. Share your thoughts on the impact of social media on modern communication and relationships. </p><br>
+
+
+
+<audio id="audio"  controls style="display: none;"></audio><br>
+<input type="button" id="startButton" value="Start Recording" onclick="startRecording()" />
+<input type="button" id="stopButton" value="Stop Recording" onclick="stopRecording()" disabled />
+<script>
+    let recorder, audio_stream;
+    
+    function startRecording() {
+        navigator.mediaDevices.getUserMedia({ audio: true })
+            .then(function (stream) {
+                audio_stream = stream;
+                recorder = new MediaRecorder(stream);
+                
+                // Array to store audio chunks
+                let chunks = [];
+                
+                recorder.ondataavailable = function (e) {
+                    chunks.push(e.data);
+                };
+                
+                recorder.onstop = function () {
+                    const blob = new Blob(chunks, { type: 'audio/wav' });
+                    chunks = [];
+                    const audioURL = URL.createObjectURL(blob);
+                    document.getElementById("audio").src = audioURL;
+                    downloadAudio(blob);
+                };
+                
+                recorder.start();
+                document.getElementById("startButton").disabled = true;
+                document.getElementById("stopButton").disabled = false; // Enable stop button
+            })
+            .catch(function (error) {
+                console.error('Error accessing microphone:', error);
+            });
+    }
+    
+    function stopRecording() {
+        if (recorder && recorder.state !== "inactive") {
+            recorder.stop();
+            audio_stream.getTracks().forEach(track => track.stop());
+            document.getElementById("startButton").disabled = false;
+            document.getElementById("stopButton").disabled = true;
+        }
+    }
+    
+    function downloadAudio(blob) {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        document.body.appendChild(a);
+        a.style = "display: none";
+        a.href = url;
+        
+        // Generate timestamp
+        const now = new Date();
+        const timestamp = now.getFullYear() + 
+                          ('0' + (now.getMonth() + 1)).slice(-2) + 
+                          ('0' + now.getDate()).slice(-2) + '_' +
+                          ('0' + now.getHours()).slice(-2) + 
+                          ('0' + now.getMinutes()).slice(-2) + 
+                          ('0' + now.getSeconds()).slice(-2);
+        
+        a.download = `recording_6${timestamp}.wav`;
+        a.click();
+        window.URL.revokeObjectURL(url);
+    }
+</script>
+
+
+<br><br>
+<b><p style="color:red; line-height: 2;"><u>Recording and Uploading Instructions</u>:</p></b>
+<p style="font-size:14px"></p><ol>
+<li style="font-size:14px; line-height: 1;">Click the "Start Recording" button to begin. The "Stop Recording" button will be active once you have started recording.</li>
+<li style="font-size:14px; line-height: 1;">When you've finished speaking, click the "Stop Recording" button. Your recording will automatically be saved and downloaded as a WAV file to your device. (Note: Enable Automatic Downloads to download multiple files for each question)</li>
+<li style="font-size:14px; line-height: 1;">Listen to your recording using the audio player that appears below the buttons. If you're not satisfied, you can record again by clicking "Start Recording" button.</li>
+</ol><p></p>

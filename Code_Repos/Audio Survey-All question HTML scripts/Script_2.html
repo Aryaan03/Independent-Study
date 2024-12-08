@@ -1,0 +1,88 @@
+<b><h1 style="color:Black;"> Read aloud the text:</h1> </b><br>
+	
+<p style = "font-size: 19px; line-height: 1.25;">Last weekend, I attended a lively cricket match at the local stadium. 
+    The atmosphere was electric, with fans cheering enthusiastically for their favorite teams. I enjoyed some spicy samosas 
+    and a cool lassi while watching the game. The match was quite thrilling, with both teams playing excellently. In the end, 
+    it came down to the last over, and the home team won by a narrow margin. After the match, we celebrated the victory by 
+    bursting crackers and dancing to Bollywood songs. The next morning, I uploaded all the photographs to social media, 
+    especially the spectacular shots of the winning six and the team's victory lap around the ground. My international friends 
+    were particularly interested in understanding the rules of cricket, so I spent an hour explaining the difference between test 
+    matches and twenty-twenty formats. The tournament organizers have already announced the schedule for next month's matches, 
+    and I've purchased tickets for the quarter-finals and semi-finals.</p><br>
+
+
+<audio id="audio"  controls style="display: none;"></audio><br>
+<input type="button" id="startButton" value="Start Recording" onclick="startRecording()" />
+<input type="button" id="stopButton" value="Stop Recording" onclick="stopRecording()" disabled />
+<script>
+    let recorder, audio_stream;
+    
+    function startRecording() {
+        navigator.mediaDevices.getUserMedia({ audio: true })
+            .then(function (stream) {
+                audio_stream = stream;
+                recorder = new MediaRecorder(stream);
+                
+                // Array to store audio chunks
+                let chunks = [];
+                
+                recorder.ondataavailable = function (e) {
+                    chunks.push(e.data);
+                };
+                
+                recorder.onstop = function () {
+                    const blob = new Blob(chunks, { type: 'audio/wav' });
+                    chunks = [];
+                    const audioURL = URL.createObjectURL(blob);
+                    document.getElementById("audio").src = audioURL;
+                    downloadAudio(blob);
+                };
+                
+                recorder.start();
+                document.getElementById("startButton").disabled = true;
+                document.getElementById("stopButton").disabled = false; // Enable stop button
+            })
+            .catch(function (error) {
+                console.error('Error accessing microphone:', error);
+            });
+    }
+    
+    function stopRecording() {
+        if (recorder && recorder.state !== "inactive") {
+            recorder.stop();
+            audio_stream.getTracks().forEach(track => track.stop());
+            document.getElementById("startButton").disabled = false;
+            document.getElementById("stopButton").disabled = true;
+        }
+    }
+    
+    function downloadAudio(blob) {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        document.body.appendChild(a);
+        a.style = "display: none";
+        a.href = url;
+        
+        // Generate timestamp
+        const now = new Date();
+        const timestamp = now.getFullYear() + 
+                          ('0' + (now.getMonth() + 1)).slice(-2) + 
+                          ('0' + now.getDate()).slice(-2) + '_' +
+                          ('0' + now.getHours()).slice(-2) + 
+                          ('0' + now.getMinutes()).slice(-2) + 
+                          ('0' + now.getSeconds()).slice(-2);
+        
+        a.download = `recording_2${timestamp}.wav`;
+        a.click();
+        window.URL.revokeObjectURL(url);
+    }
+</script>
+
+
+<br><br>
+<b><p style="color:red; line-height: 2;"><u>Recording and Uploading Instructions</u>:</p></b>
+<p style="font-size:14px"></p><ol>
+<li style="font-size:14px; line-height: 1;">Click the "Start Recording" button to begin. The "Stop Recording" button will be active once you have started recording.</li>
+<li style="font-size:14px; line-height: 1;">When you've finished speaking, click the "Stop Recording" button. Your recording will automatically be saved and downloaded as a WAV file to your device. (Note: Enable Automatic Downloads to download multiple files for each question)</li>
+<li style="font-size:14px; line-height: 1;">Listen to your recording using the audio player that appears below the buttons. If you're not satisfied, you can record again by clicking "Start Recording" button.</li>
+</ol><p></p>

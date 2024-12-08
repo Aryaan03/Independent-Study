@@ -1,0 +1,91 @@
+<b><h1 style="color:Black;">Read the Use-Case prompt aloud:</h1> </b><br>
+
+
+<p style="font-size: 19px; line-height: 1.1;">Good evening! I have several requests to make tonight. First, I'd like 
+    to place a dinner order for delivery - could I get one butter chicken curry with extra gravy, two freshly baked naan 
+    breads, a large portion of vegetable biryani with salad, and a sweet mango lassi? Oh, and please add some crispy 
+    vegetable samosas as appetizers. While I'm waiting for my food order, I need to make a hotel reservation for next 
+    weekend. I'm looking for a comfortable double room with a mountain view, preferably on one of the higher floors - 
+    perhaps the twentieth or twenty-fifth floor. Does the room rate include complimentary breakfast and access to the 
+    swimming pool? Also, I'm trying to reach Cyber City for an important meeting tomorrow morning. Could you guide me 
+    to the nearest metro station from MG Road? I need to know which colored line to take and how many stops it will be. 
+    One final matter needs your attention - I received my online shopping package today, but unfortunately, there's a 
+    problem. The outer box is severely damaged, and one item from my order is missing. The order number is SDRE2344. 
+    Could you please help arrange for an immediate replacement? </p><br>
+ 
+
+<audio id="audio"  controls style="display: none;"></audio><br>
+<input type="button" id="startButton" value="Start Recording" onclick="startRecording()" />
+<input type="button" id="stopButton" value="Stop Recording" onclick="stopRecording()" disabled />
+<script>
+    let recorder, audio_stream;
+    
+    function startRecording() {
+        navigator.mediaDevices.getUserMedia({ audio: true })
+            .then(function (stream) {
+                audio_stream = stream;
+                recorder = new MediaRecorder(stream);
+                
+                // Array to store audio chunks
+                let chunks = [];
+                
+                recorder.ondataavailable = function (e) {
+                    chunks.push(e.data);
+                };
+                
+                recorder.onstop = function () {
+                    const blob = new Blob(chunks, { type: 'audio/wav' });
+                    chunks = [];
+                    const audioURL = URL.createObjectURL(blob);
+                    document.getElementById("audio").src = audioURL;
+                    downloadAudio(blob);
+                };
+                
+                recorder.start();
+                document.getElementById("startButton").disabled = true;
+                document.getElementById("stopButton").disabled = false; // Enable stop button
+            })
+            .catch(function (error) {
+                console.error('Error accessing microphone:', error);
+            });
+    }
+    
+    function stopRecording() {
+        if (recorder && recorder.state !== "inactive") {
+            recorder.stop();
+            audio_stream.getTracks().forEach(track => track.stop());
+            document.getElementById("startButton").disabled = false;
+            document.getElementById("stopButton").disabled = true;
+        }
+    }
+    
+    function downloadAudio(blob) {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        document.body.appendChild(a);
+        a.style = "display: none";
+        a.href = url;
+        
+        // Generate timestamp
+        const now = new Date();
+        const timestamp = now.getFullYear() + 
+                          ('0' + (now.getMonth() + 1)).slice(-2) + 
+                          ('0' + now.getDate()).slice(-2) + '_' +
+                          ('0' + now.getHours()).slice(-2) + 
+                          ('0' + now.getMinutes()).slice(-2) + 
+                          ('0' + now.getSeconds()).slice(-2);
+        
+        a.download = `recording_5${timestamp}.wav`;
+        a.click();
+        window.URL.revokeObjectURL(url);
+    }
+</script>
+
+
+<br><br>
+<b><p style="color:red; line-height: 2;"><u>Recording and Uploading Instructions</u>:</p></b>
+<p style="font-size:14px"></p><ol>
+<li style="font-size:14px; line-height: 1;">Click the "Start Recording" button to begin. The "Stop Recording" button will be active once you have started recording.</li>
+<li style="font-size:14px; line-height: 1;">When you've finished speaking, click the "Stop Recording" button. Your recording will automatically be saved and downloaded as a WAV file to your device. (Note: Enable Automatic Downloads to download multiple files for each question)</li>
+<li style="font-size:14px; line-height: 1;">Listen to your recording using the audio player that appears below the buttons. If you're not satisfied, you can record again by clicking "Start Recording" button.</li>
+</ol><p></p>
